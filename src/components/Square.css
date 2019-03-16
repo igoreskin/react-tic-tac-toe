@@ -1,3 +1,22 @@
 .square {
+    height: 60px;
+    width: 60px;
     background-color: aquamarine;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.square:focus, .square:active, .square::before {
+    outline: 0;
+    box-shadow: none !important;
+    
+}
+
+.square:hover {
+    background-color: aqua;
+}
+
+.square:visited {
+    display: inline-block;
 }

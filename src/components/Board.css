@@ -1,5 +1,16 @@
-.board.status {
-    margin-bottom: 50px;
+.status {
+  margin-bottom: 50px;
+  font-size: 200%;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board-row {
+    display: flex;
 }
 
     

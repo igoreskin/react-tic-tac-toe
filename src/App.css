@@ -1,20 +1,20 @@
 .App {
   text-align: center;
-  background-color: antiquewhite;
-  height: 100vh;
+  /* background-color: aliceblue; */
+  height: 100%;
   padding-top: 100px;
 }
 
-.square {
+/* .square {
   height: 40px;
   width: 40px;
   background-color: aquamarine;
-}
+} */
 
-.status {
+/* .status {
   margin-bottom: 50px;
   font-size: 200%;
-}
+} */
 
 
 /* .App-logo {
