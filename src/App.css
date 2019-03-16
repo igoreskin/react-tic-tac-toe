@@ -1,8 +1,23 @@
 .App {
   text-align: center;
+  background-color: antiquewhite;
+  height: 100vh;
+  padding-top: 100px;
 }
 
-.App-logo {
+.square {
+  height: 40px;
+  width: 40px;
+  background-color: aquamarine;
+}
+
+.status {
+  margin-bottom: 50px;
+  font-size: 200%;
+}
+
+
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
@@ -30,4 +45,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

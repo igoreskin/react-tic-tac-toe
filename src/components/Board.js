@@ -8,11 +8,15 @@ class Board extends Component {
         this.state = {
             squares: Array(9).fill(null),
             xIsNext: true,
+            isDraw: false,
         }
     }
 
     handleClick(i) {
         const squares = [...this.state.squares];
+        if(!this.calculateWinner(squares)) {
+            console.log("no winner")
+        }
         if(this.calculateWinner(squares) || squares[i]) {
             return;
         }
@@ -51,6 +55,10 @@ class Board extends Component {
 
         const winner = this.calculateWinner(this.state.squares);
         let gameStatus;
+        if(this.state.isDraw) {
+            gameStatus = 'This is a draw!';
+            return;
+        }
         if(winner) {
             gameStatus = `Winner: ${winner}`;
         } else {
@@ -58,7 +66,7 @@ class Board extends Component {
         }
 
         return (
-            <div>
+            <div className="board">
                 <div className="status">{gameStatus}</div>
                 <div className="board-row">
                     {this.renderSquare(0)}
