@@ -45,6 +45,7 @@ class Game extends Component {
         this.setState({ 
             history: history.concat([{squares: squares}]),
             xIsNext: !this.state.xIsNext })
+        this.state.xIsNext ? this.setState({ color: "#18dcff" }) : this.setState({ color: "#ffd700" })
     }
 
     render() {
@@ -83,3 +84,6 @@ class Game extends Component {
 }
 
 export default Game;
+
+// neon blue: #18dcff
+// orange: #ffd700
