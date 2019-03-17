@@ -1,5 +1,8 @@
 .game-board {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+.game-info {
 }
 
 .status {
@@ -8,5 +11,12 @@
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+}
+
+.moves {
+  background-color: bisque;
+  height: 30px;
+  width: 20%;
+  margin-left: -30px;
 }
