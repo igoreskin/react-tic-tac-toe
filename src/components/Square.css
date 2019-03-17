@@ -5,6 +5,9 @@
     transition: background-color 0.3s ease;
     cursor: pointer;
     padding: 6px;
+    font-weight: bold;
+    font-size: 150%;
+    color: #3B3B98;
 }
 
 .square:visited {

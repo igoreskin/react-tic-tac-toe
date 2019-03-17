@@ -4,7 +4,14 @@
 
 .status {
   margin-top: 50px;
+  margin-bottom: 30px;
   font-size: 200%;
+  font-weight: bold;
+  color: #3B3B98;
+}
+
+.winner {
+  color: red;
 }
 
 ul {

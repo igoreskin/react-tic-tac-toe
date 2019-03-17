@@ -83,7 +83,8 @@ class Game extends Component {
                 <Board squares={current.squares} onClick={(i) => this.handleClick(i)} />
             </div>
             <div className='game-info'>
-                <div className='status'>{ gameStatus }</div>
+                    {gameStatus.includes('Winner') ? <div className='status winner'>{gameStatus}</div> : <div className='status'>{gameStatus}</div>}
+                
                     <ul>{moves}</ul>
             </div>
         </div>
