@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Board from './Board';
 import './Game.css';
+import './animate.css';
 
 class Game extends Component {
     constructor(props) {
@@ -83,8 +84,8 @@ class Game extends Component {
                 <Board squares={current.squares} onClick={(i) => this.handleClick(i)} />
             </div>
             <div className='game-info'>
-                    {gameStatus.includes('Winner') ? <div className='status winner'>{gameStatus}</div> : <div className='status'>{gameStatus}</div>}
-                
+                    {gameStatus.includes('Winner') ? 
+                    <div className='status winner animated lightSpeedIn'>{gameStatus}</div> : <div className='status'>{gameStatus}</div>}
                     <ul>{moves}</ul>
             </div>
         </div>
