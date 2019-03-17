@@ -7,16 +7,19 @@
     padding: 6px;
 }
 
-.square:focus, .square:active, .square::before {
-    outline: 0;
-    box-shadow: none !important;
-    
+.square:visited {
+    background-color: #ffd700;
 }
 
 .square:hover {
     background-color: aqua;
 }
 
-.square:visited {
-    display: inline-block;
+.square:focus {
+    background-color: #ffd700;
+}
+
+.square:focus, .square:active {
+    outline: 0;
+    box-shadow: none !important;
 }
