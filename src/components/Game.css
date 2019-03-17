@@ -2,9 +2,6 @@
   margin-top: 20px;
 }
 
-.game-info {
-}
-
 .status {
   margin-top: 50px;
   font-size: 200%;
@@ -19,4 +16,21 @@ ul {
   height: 30px;
   width: 20%;
   margin-left: -30px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #e58e26;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.moves:hover {
+  background-color: #ff9f1a;
+  color: white;
+  border: 1px solid #ff9f1a;
+}
+
+.moves:focus, .moves:active {
+    outline: 0;
+    box-shadow: none !important;
 }

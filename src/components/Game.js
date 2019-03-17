@@ -95,3 +95,4 @@ export default Game;
 
 // neon blue: #18dcff
 // orange: #ffd700
+// radiant yellow: #ff9f1a
