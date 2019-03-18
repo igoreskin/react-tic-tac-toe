@@ -10,17 +10,13 @@
     color: #3B3B98;
 }
 
-.square:visited {
-    background-color: #ffd700;
-}
-
-.square:hover {
+/* .square:hover {
     background-color: aqua;
 }
 
 .square:focus {
     background-color: #ffd700;
-}
+} */
 
 .square:focus, .square:active {
     outline: 0;
