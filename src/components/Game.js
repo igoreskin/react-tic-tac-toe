@@ -36,7 +36,7 @@ class Game extends Component {
     }
 
     handleClick(i) {
-        console.log(this.state.stepNumber)
+        // console.log(this.state.stepNumber)
         const history = this.state.history.slice(0, this.state.stepNumber + 1);
         const current = history[history.length - 1];
         const squares = [...current.squares];
@@ -72,8 +72,13 @@ class Game extends Component {
         })
 
         let gameStatus;
-        if(winner) {
-            gameStatus = `Winner: ${winner}`;
+        console.log(this.state.stepNumber)
+        
+        if(this.state.stepNumber === 9 && !winner) {
+            gameStatus = "It's a draw!"
+            console.log(gameStatus)
+        } else if(winner) {
+            gameStatus = `Winner: ${winner}!`;
         } else {
             gameStatus = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
         }
