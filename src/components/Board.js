@@ -3,8 +3,6 @@ import Square from './Square';
 import './Board.css';
 
 class Board extends Component {
-    // constructor(props) {
-
 
     renderSquare(i) {
         return (
@@ -16,7 +14,6 @@ class Board extends Component {
 
         return (
             <div className="board">
-                {/* <div className="status">{gameStatus}</div> */}
                 <div className="board-row">
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}

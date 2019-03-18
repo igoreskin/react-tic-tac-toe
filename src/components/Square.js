@@ -3,7 +3,6 @@ import './Square.css';
 
 const square = (props) => {
     let style = '';
-    // console.log(props) 
 
     if(props.value === null) {
         style = {backgroundColor: 'aquamarine'}
